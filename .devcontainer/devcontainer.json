@@ -1,0 +1,15 @@
+{
+  "name": "GPU-enabled Codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb",
+    "gpus": "1"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+      "installCudnn": true
+    }
+  }
+}
